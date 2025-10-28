@@ -1,9 +1,13 @@
 import random
 import threading
 
+def some_computation():
+    100 // random.choice((0, 1, 2, 5))
+
+
 def worker(done_event: threading.Event) -> None:
     for _ in range(5000):
-        100 // random.choice((0, 1, 2, 5))
+        some_computation()
     done_event.set()
 
 
