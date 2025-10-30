@@ -1,0 +1,10 @@
+<h1>Notes</h1>
+<form method="post">
+    <input type="text" name="text" placeholder="Enter note">
+    <input type="submit" value="Add">
+</form>
+<ul>
+{% for note in notes %}
+    <li>{{ note['text'] }}</li>
+{% endfor %}
+</ul>
