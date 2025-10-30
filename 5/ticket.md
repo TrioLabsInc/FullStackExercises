@@ -1,0 +1,1 @@
+app.py shows a page for adding notes to the list, but the add button doesn't work!
